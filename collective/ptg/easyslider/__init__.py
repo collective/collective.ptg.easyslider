@@ -106,12 +106,7 @@ $(document).ready(function(){
 """ % {
          'boxheight': self.settings.easyslider_imageheight,
          'boxwidth': self.settings.easyslider_imagewidth,
-         'imageheight': self.settings.easyslider_imageheight - (
-            self.settings.easyslider_zoom) * 2,
-         'imagewidth': self.settings.easyslider_imagewidth - (
-            self.settings.easyslider_zoom) * 2,
          'speed': self.settings.duration,
-         'zoom': self.settings.easyslider_zoom
     }
 
     def css(self):
