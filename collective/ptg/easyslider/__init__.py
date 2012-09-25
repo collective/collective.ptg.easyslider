@@ -107,6 +107,7 @@ $(document).ready(function(){
          'boxheight': self.settings.easyslider_imageheight,
          'boxwidth': self.settings.easyslider_imagewidth,
          'speed': self.settings.duration,
+         'portal_url': self.portal_url,
     }
 
     def css(self):
