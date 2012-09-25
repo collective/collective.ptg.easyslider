@@ -10,12 +10,12 @@ _ = MessageFactory('collective.ptg.easyslider')
 class IEasysliderDisplaySettings(IBaseSettings):
     easyslider_imagewidth = schema.Int(
         title=_(u"label_easyslider_imagewidth",
-            default=u"Width of (each) image (when mouse hovers)"),
+            default=u"Width"),
         default=400,
         min=50)
     easyslider_imageheight = schema.Int(
         title=_(u"label_easyslider_imageheight",
-            default=u"Height of (each) image"),
+            default=u"Height"),
         default=260,
         min=50)
     easyslider_use_icons = schema.Bool(
@@ -24,7 +24,7 @@ class IEasysliderDisplaySettings(IBaseSettings):
         default=False)
     easyslider_overlay_opacity = schema.Choice(
         title=_(u"label_easyslider_overlay_opacity",
-                default=u"Opacity on mouse over"),
+                default=u"Opacity on text overlay"),
         default=0.3,
         vocabulary=SimpleVocabulary([
             SimpleTerm(0, 0,
