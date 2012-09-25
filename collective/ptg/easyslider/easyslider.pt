@@ -1,5 +1,7 @@
 <div id="slider" class="easyslider" >
+    <ul>
 	<tal:images tal:repeat="img view/adapter/cooked_images">
+		<li>
 		<a href="" tal:define="number repeat/img/index"
         		   tal:attributes="href img/link" >
 			<div>
@@ -20,6 +22,8 @@
                                  alt img/description;
                                  src img/thumb_url" 
                  tal:condition="view/settings/easyslider_use_icons" />
-		</a>       
-    </tal:images>    
+		</a>
+		</li>
+    </tal:images> 
+    </ul>
 </div>
