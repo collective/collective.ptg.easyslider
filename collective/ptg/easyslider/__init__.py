@@ -2,6 +2,7 @@ from collective.plonetruegallery.utils import createSettingsFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from collective.plonetruegallery.browser.views.display import BaseDisplayType
 from collective.plonetruegallery.interfaces import IBaseSettings
+from collective.plonetruegallery.browser.views.display import jsbool
 from zope import schema
 from zope.i18nmessageid import MessageFactory
 
@@ -22,6 +23,42 @@ class IEasysliderDisplaySettings(IBaseSettings):
         title=_(u"label_easyslider_use_icons",
             default=u"Use Thumbnail size instead of Size"),
         default=False)
+        
+    easyslider_controlsShow = schema.Bool(
+        title=_(u"label_easyslider_controlsShow",
+            default=u"Show Controls?"),
+        default=True)
+        
+    easyslider_controlsFade = schema.Bool(
+        title=_(u"label_easyslider_controlsFade",
+            default=u"Fade Controls?"),
+        default=True)
+    
+    easyslider_firstShow = schema.Bool(
+        title=_(u"label_easyslider_firstShow",
+            default=u"Show first?"),
+        default=False)
+    
+    easyslider_lastShow = schema.Bool(
+        title=_(u"label_easyslider_lastShow",
+            default=u"Show last?"),
+        default=False)
+        
+    easyslider_vertical = schema.Bool(
+        title=_(u"label_easyslider_vertical",
+            default=u"Vertical sliding?"),
+        default=False)
+
+    easyslider_continuous = schema.Bool(
+        title=_(u"label_easyslider_continuous",
+            default=u"Continuous?"),
+        default=False)
+
+    easyslider_numeric = schema.Bool(
+        title=_(u"label_easyslider_numeric",
+            default=u"Numeric ?"),
+        default=False)
+ 
     easyslider_overlay_opacity = schema.Choice(
         title=_(u"label_easyslider_overlay_opacity",
                 default=u"Opacity on text overlay"),
@@ -97,18 +134,44 @@ src="%(portal_url)s/++resource++ptg.easyslider/easySlider.js">
      <script type="text/javascript">
 $(document).ready(function(){	
 	$("#slider").easySlider({
-		auto: true,
-		continuous: true 
+		prevId: 		'prevBtn',
+		prevText: 		'Previous',
+		nextId: 		'nextBtn',	
+		nextText: 		'Next',
+		controlsShow:	%(controlsShow)s,
+		controlsBefore:	'',
+		controlsAfter:	'',	
+		controlsFade:	%(controlsFade)s,
+		firstId: 		'firstBtn',
+		firstText: 		'First',
+		firstShow:		%(firstShow)s,
+		lastId: 		'lastBtn',	
+		lastText: 		'Last',
+		lastShow:		%lastShow)s,				
+		vertical:		%(vertical)s,
+		speed: 			%(speed)i,
+		auto:			%(auto)s,
+		pause:			%(pause)s,
+		continuous:		%(continuous)s, 
+		numeric: 		%(numeric)s,
+		numericId: 		'controls'
 	});
 });
 </script>
 
 """ % {
-         'boxheight': self.settings.easyslider_imageheight,
-         'boxwidth': self.settings.easyslider_imagewidth,
-         'speed': self.settings.duration,
-         'portal_url': self.portal_url,
-    }
+        'speed':        self.settings.duration,
+        'portal_url':   self.portal_url,
+        'controlsShow':	jsbool(self.settings.controlsShow),
+		'controlsFade':	jsbool(self.settings.controlsFade),
+		'firstShow':	jsbool(self.settings.firstShow),
+		'lastShow':		jsbool(self.settings.lastShow),				
+		'vertical':		jsbool(self.settings.vertical),
+		'auto':			jsbool(self.settings.timed),
+		'pause':		jsbool(self.settings.delay),
+		'continuous':	jsbool(self.settings.continuous), 
+		'numeric': 		jsbool(self.settings.numeric),
+	}
 
     def css(self):
         relpath = '++resource++ptg.easyslider'
