@@ -147,7 +147,7 @@ $(document).ready(function(){
 		firstShow:		%(firstShow)s,
 		lastId: 		'lastBtn',	
 		lastText: 		'Last',
-		lastShow:		%lastShow)s,				
+		lastShow:		%(lastShow)s,				
 		vertical:		%(vertical)s,
 		speed: 			%(speed)i,
 		auto:			%(auto)s,
@@ -162,15 +162,15 @@ $(document).ready(function(){
 """ % {
         'speed':        self.settings.duration,
         'portal_url':   self.portal_url,
-        'controlsShow':	jsbool(self.settings.controlsShow),
-		'controlsFade':	jsbool(self.settings.controlsFade),
-		'firstShow':	jsbool(self.settings.firstShow),
-		'lastShow':		jsbool(self.settings.lastShow),				
-		'vertical':		jsbool(self.settings.vertical),
+        'controlsShow':	jsbool(self.settings.easyslider_controlsShow),
+		'controlsFade':	jsbool(self.settings.easyslider_controlsFade),
+		'firstShow':	jsbool(self.settings.easyslider_firstShow),
+		'lastShow':		jsbool(self.settings.easyslider_lastShow),				
+		'vertical':		jsbool(self.settings.easyslider_vertical),
 		'auto':			jsbool(self.settings.timed),
 		'pause':		jsbool(self.settings.delay),
-		'continuous':	jsbool(self.settings.continuous), 
-		'numeric': 		jsbool(self.settings.numeric),
+		'continuous':	jsbool(self.settings.easyslider_continuous), 
+		'numeric': 		jsbool(self.settings.easyslider_numeric),
 	}
 
     def css(self):
