@@ -3,35 +3,48 @@
 #slider-wrapper  {
 	border: 1px solid #b8b8b8;
 	margin: auto;
+}
+ 
+#slider-wrapper li {
+	display: block;
+	margin: 0;
+	padding: 0;
 	overflow: hidden;
 }
-
- 
-div.news-slide {
-	padding: 15px;
-}
-
-img.news-slide-image {
-	float: right;
-	padding-top: 10px;
-}
-
-#slider-container #parent-fieldname-title {
-	padding: 6px 10px;
-	border-bottom: 0 none;
+#slider-wrapper ul {
+	margin: 0;
+	padding: 0;	
+	list-style-image: none;
+	list-style-type: none;
 	display: block;
 }
 
-#slider ul, #slider li.slide {
-	margin: 0;
+.slider-text {
+	width: 100%;
+	z-index: 10;
 	padding: 0;
-	list-style: none;
+	margin: 0;
+	position: relative;
+	display: block;
 }
 
-#slider, #slider li.slide {
-	overflow: hidden;
+h1.image-title {
+	margin: 0;
+	padding: 4px 10px 0;
+	border-bottom: 0 none;
+	color: white;
 }
 
+.slider-text .documentDescription {
+	padding: 0 10px 4px;
+	color: white;
+}
+
+#slider a {
+	text-decoration: none !important;
+}
+
+ 
 #prevBtn, #nextBtn{ 
 	display:block;
 	width:30px;
@@ -85,18 +98,6 @@ margin: 0 3px;
 	background:url(++resource++ptg.easyslider/arrowr2.gif) no-repeat 0 0;	
 }
 
-
-
-.slider-text {
-	padding: 10px;
-	float: left;
-	display: block;
-}
-
-.slider-image {
-	float: right;
-	display: block;
-}
 
 #easySlider-goToButtons a.active {
 	background: #494949;

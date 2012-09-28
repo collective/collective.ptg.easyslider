@@ -19,6 +19,12 @@ class IEasysliderDisplaySettings(IBaseSettings):
             default=u"Height"),
         default=260,
         min=50)
+    easyslider_lis = schema.Int(
+        title=_(u"label_easyslider_lis",
+            default=u"How many slides to show at the same time"),
+        default=1,
+        min=1)
+
     easyslider_use_icons = schema.Bool(
         title=_(u"label_easyslider_use_icons",
             default=u"Use Thumbnail size instead of Size"),
@@ -189,11 +195,21 @@ $(document).ready(function(){
     width: %(boxwidth)ipx;
 }
 
-#slider-wrapper ul {
+#slider{
+    height: %(boxheight)ipx !important;
+    width: %(boxwidth)ipx !important;
+}
+
+#slider ul,
+#slider li {
     height: %(boxheight)ipx;
 }
 
-#slider a div {
+#slider-wrapper li {
+    width: %(liwidth)ipx;
+}
+
+.slider-text {
     background-color: rgba(15, 15, 15, %(overlay_opacity)f);
 }
 
@@ -202,6 +218,8 @@ $(document).ready(function(){
 """ % {
         'columns': self.settings.easyslider_columns,
         'boxheight': self.settings.easyslider_imageheight,
+        'boxwidth': self.settings.easyslider_imagewidth,
+        'liwidth': self.settings.easyslider_imagewidth / self.settings.easyslider_lis,
         'boxwidth': self.settings.easyslider_imagewidth,
         'overlay_opacity': self.settings.easyslider_overlay_opacity,
         'style': style
