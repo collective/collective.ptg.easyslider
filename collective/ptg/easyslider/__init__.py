@@ -213,6 +213,11 @@ $(document).ready(function(){
     background-color: rgba(15, 15, 15, %(overlay_opacity)f);
 }
 
+#nextBtn, #lastBtn { 
+    left: %(boxwidth)ipx;
+}
+
+
 </style>
 <link rel="stylesheet" type="text/css" href="%(style)s"/>
 """ % {

@@ -2,60 +2,108 @@
 
 #slider-wrapper  {
 	border: 1px solid #b8b8b8;
-	margin: auto;
+	margin: 10px auto 20px;
 }
+
+	/* numeric controls */	
+
+	ol#controls{
+		margin:10px 0 25px 0;
+		padding:0;
+		height:28px;	
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:28px;
+		width: 28px;
+		line-height:28px;
+		}
+	ol#controls li a{
+		float:left;
+		height:28px;
+		line-height:28px;
+		border:1px solid #ccc;
+		background:#DAF3F8;
+		color:#555;
+		padding:0 10px;
+		text-decoration:none;
+		}
+	ol#controls li.current a{
+		background:#5DC9E1;
+		color:#fff;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+
  
-#slider-wrapper li {
-	display: block;
-	margin: 0;
+#slider li {
+ 	margin: 0;
 	padding: 0;
 	overflow: hidden;
+	display: block;
+	position: relative;
 }
-#slider-wrapper ul {
+#slider ul {
 	margin: 0;
 	padding: 0;	
 	list-style-image: none;
 	list-style-type: none;
-	display: block;
-}
+} 
 
 .slider-text {
 	width: 100%;
-	z-index: 10;
-	padding: 0;
+	position: absolute;
+	padding: 5px 0;
 	margin: 0;
-	position: relative;
-	display: block;
+	z-index: 3;
+	height:57px;
+	bottom: 0;
+}
+
+img.slider-image {
+ 	position: absolute;
+	z-index: 1;
+	top:  0px;
 }
 
 h1.image-title {
 	margin: 0;
 	padding: 4px 10px 0;
 	border-bottom: 0 none;
-	color: white;
+	color: #EEE;
 }
 
 .slider-text .documentDescription {
 	padding: 0 10px 4px;
-	color: white;
+	color: #EEE;
+	font-weight: normal;
 }
 
 #slider a {
 	text-decoration: none !important;
 }
 
- 
+#firstBtn, #lastBtn,
 #prevBtn, #nextBtn{ 
 	display:block;
 	width:30px;
-	height:77px;
-	position:relative;
-	left:-30px;
-	top:-130px;
-}	
-#nextBtn{ 
-    top:-205px;
+	height:30%;
+	position: relative;
 }
+
+#firstBtn,
+#prevBtn {
+	left:-30px;
+	top:-65%;
+}
+
+#lastBtn,	
+#nextBtn{ 
+    top:-95%;
+}
+
 
 #prevBtn a, #nextBtn a{  
 	display:block;
@@ -64,8 +112,21 @@ h1.image-title {
 	height:77px;
 	background:url(++resource++ptg.easyslider/btn_prev.gif) no-repeat 0 0;	
 }	
+
 #nextBtn a{ 
 	background:url(++resource++ptg.easyslider/btn_next.gif) no-repeat 0 0;	
+}
+
+#firstBtn a, #lastBtn a {  
+	display:block;
+    color: transparent;
+	width:32px;
+	height:30px;
+	background:url(++resource++ptg.easyslider/button_black_first.png) no-repeat 0 0;	
+}	
+
+#lastBtn a { 
+	background:url(++resource++ptg.easyslider/button_black_last.png) no-repeat 4px 0;	
 }
 
 #smallButtons {
