@@ -4,3 +4,5 @@
 *.pyc
 
 collective.ptg.easyslider.egg-info/
+
+*.zip
