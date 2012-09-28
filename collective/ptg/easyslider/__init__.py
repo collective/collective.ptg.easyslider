@@ -184,12 +184,16 @@ $(document).ready(function(){
 
         return u"""
         <style>
-.easyslider {
+#slider-wrapper {
     height: %(boxheight)ipx;
     width: %(boxwidth)ipx;
 }
 
-.easyslider a div {
+#slider-wrapper ul {
+    height: %(boxheight)ipx;
+}
+
+#slider a div {
     background-color: rgba(15, 15, 15, %(overlay_opacity)f);
 }
 
