@@ -130,8 +130,6 @@
 				if(t<0) t=ts;	
 				if(!options.vertical) {
 					$("ul",obj).css("margin-left",(t*w*-1));
-				} else {
-					$("ul",obj).css("margin-left",(t*h*-1));
 				}
 				clickable = true;
 				if(options.numeric) setCurrent(t);
