@@ -111,11 +111,11 @@ h1.image-title {
     color: transparent;
 	width:30px;
 	height:77px;
-	background:url(++resource++ptg.easyslider/arrow-left.gif) no-repeat 0 0;	
+	background:url(++resource++ptg.easyslider/btn_prev.gif) no-repeat 0 0;	
 }	
 
 #nextBtn a{ 
-	background:url(++resource++ptg.easyslider/arrow-right.gif) no-repeat 0 0;	
+	background:url(++resource++ptg.easyslider/btn_next.gif) no-repeat 0 0;	
 }
 
 #firstBtn a, #lastBtn a {  
