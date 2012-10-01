@@ -56,7 +56,8 @@
 			obj.css("overflow","hidden");
 			var ts = s-1;
 			var t = 0;
-			$("ul", obj).css('width',s*w);			
+			$("ul", obj).css('width',(options.lis)*w);	
+			if(!options.vertical) $("ul", obj).css('width',(options.lis)*w);				
 			
 			if(options.continuous){
 				$("ul", obj).prepend($("ul li:last-child", obj).clone().css("margin-left","-"+ w +"px"));
