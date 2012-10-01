@@ -38,7 +38,8 @@
 			pause:			2000,
 			continuous:		false, 
 			numeric: 		false,
-			numericId: 		'controls'
+			numericId: 		'controls',
+			lis:			1
 		}; 
 		
 		var options = $.extend(defaults, options);  
@@ -46,6 +47,7 @@
 		this.each(function() {  
 			var obj = $(this); 				
 			var s = $("li", obj).length;
+			if(options.vertical) var s = ($("li", obj).length)/(options.lis);
 			var w = $("li", obj).width(); 
 			var h = $("li", obj).height(); 
 			var clickable = true;
@@ -63,6 +65,7 @@
 			};				
 			
 			if(!options.vertical) $("li", obj).css('float','left');
+			
 								
 			if(options.controlsShow){
 				var html = options.controlsBefore;				

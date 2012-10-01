@@ -163,7 +163,8 @@ $(document).ready(function(){
 		pause:			%(pause)s,
 		continuous:		%(continuous)s, 
 		numeric: 		%(numeric)s,
-		numericId: 		'controls'
+		numericId: 		'controls',
+		lis: %(easyslider_lis)i,
 	});
 });
 </script>
@@ -180,6 +181,7 @@ $(document).ready(function(){
 		'pause':		jsbool(self.settings.delay),
 		'continuous':	jsbool(self.settings.easyslider_continuous), 
 		'numeric': 		jsbool(self.settings.easyslider_numeric),
+		'easyslider_lis': self.settings.easyslider_lis
 	}
 
     def css(self):

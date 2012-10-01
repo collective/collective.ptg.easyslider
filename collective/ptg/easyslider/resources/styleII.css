@@ -42,6 +42,7 @@
 	overflow: hidden;
 	display: block;
 	position: relative;
+	float: left;
 }
 #slider ul {
 	margin: 0;

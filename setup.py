@@ -5,7 +5,7 @@ version = '0.1'
 
 setup(name='collective.ptg.easyslider',
       version=version,
-      description="contact sheet gallery type for plonetruegallery",
+      description="Easyslider gallery type for plonetruegallery",
       long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
