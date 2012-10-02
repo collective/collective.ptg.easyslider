@@ -30,26 +30,6 @@ class IEasysliderDisplaySettings(IBaseSettings):
             default=u"Use Thumbnail size instead of Size"),
         default=False)
         
-    easyslider_controlsShow = schema.Bool(
-        title=_(u"label_easyslider_controlsShow",
-            default=u"Show Controls?"),
-        default=True)
-        
-    easyslider_controlsFade = schema.Bool(
-        title=_(u"label_easyslider_controlsFade",
-            default=u"Fade Controls?"),
-        default=True)
-    
-    easyslider_firstShow = schema.Bool(
-        title=_(u"label_easyslider_firstShow",
-            default=u"Show first?"),
-        default=False)
-    
-    easyslider_lastShow = schema.Bool(
-        title=_(u"label_easyslider_lastShow",
-            default=u"Show last?"),
-        default=False)
-        
     easyslider_vertical = schema.Bool(
         title=_(u"label_easyslider_vertical",
             default=u"Vertical sliding?"),
@@ -57,14 +37,9 @@ class IEasysliderDisplaySettings(IBaseSettings):
 
     easyslider_continuous = schema.Bool(
         title=_(u"label_easyslider_continuous",
-            default=u"Continuous?"),
+            default=u"Continuous? (You probably only want to use this when showing one slide at a time)"),
         default=False)
 
-    easyslider_numeric = schema.Bool(
-        title=_(u"label_easyslider_numeric",
-            default=u"Numeric ?"),
-        default=False)
- 
     easyslider_overlay_opacity = schema.Choice(
         title=_(u"label_easyslider_overlay_opacity",
                 default=u"Opacity on text overlay"),
@@ -103,6 +78,35 @@ class IEasysliderDisplaySettings(IBaseSettings):
             )
         ]))
 
+        
+    easyslider_controlsShow = schema.Bool(
+        title=_(u"label_easyslider_controlsShow",
+            default=u"""Show Controls? 
+                        If this is disabled, the next 4 settings does not matter"""),
+        default=True)
+        
+    easyslider_controlsFade = schema.Bool(
+        title=_(u"label_easyslider_controlsFade",
+            default=u"Fade Controls?"),
+        default=True)
+    
+    easyslider_firstShow = schema.Bool(
+        title=_(u"label_easyslider_firstShow",
+            default=u"Show (go to) first button (rewind)?"),
+        default=False)
+    
+    easyslider_lastShow = schema.Bool(
+        title=_(u"label_easyslider_lastShow",
+            default=u"Show (go to) last button?"),
+        default=False)
+        
+
+    easyslider_numeric = schema.Bool(
+        title=_(u"label_easyslider_numeric",
+            default=u"Use numeric buttons instead of prev, next. first, last?"),
+        default=False)
+ 
+
     easyslider_style = schema.Choice(
         title=_(u"label_easyslider_style",
                 default=u"What stylesheet (css file) to use"),
@@ -111,9 +115,12 @@ class IEasysliderDisplaySettings(IBaseSettings):
             SimpleTerm("style.css", "style.css",
                 _(u"label_easyslider_style_default",
                     default=u"Default")),
+            SimpleTerm("styleIII.css", "styleIII.css",
+                _(u"label_easyslider_styleIII",
+                    default=u"Alternative style")),
             SimpleTerm("styleII.css", "styleII.css",
                 _(u"label_easyslider_styleII",
-                    default=u"Style II")),
+                    default=u"News Layout style")),
             SimpleTerm("no_style.css", "no_style.css",
                 _(u"label_easyslider_style_no",
                     default=u"No style / css file")),
