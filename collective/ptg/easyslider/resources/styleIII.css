@@ -22,13 +22,14 @@
 	ol#controls li a{
 		float:left;
 		height:28px;
-		line-height:28px;
 		border:1px solid #ccc;
+		border-radius: 15px;
 		background: #fff;
 		color:#555;
 		padding:0 10px;
 		text-decoration:none;
-		}
+	font: 14px/28px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
 	ol#controls li.current a{
 		background: #000;
 		color:#fff;
