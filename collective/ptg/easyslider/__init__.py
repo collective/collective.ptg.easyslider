@@ -82,7 +82,7 @@ class IEasysliderDisplaySettings(IBaseSettings):
     easyslider_controlsShow = schema.Bool(
         title=_(u"label_easyslider_controlsShow",
             default=u"""Show Controls? 
-                        If this is disabled, the next 4 settings does not matter"""),
+                        If this is disabled, the next 4 settings have no effect"""),
         default=True)
         
     easyslider_controlsFade = schema.Bool(
