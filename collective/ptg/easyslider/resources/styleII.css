@@ -1,5 +1,3 @@
-/* @override http://localhost:8080/jtoo/++resource++ptg.easyslider/styleII.css */
-
 #slider-wrapper  {
 	border: 1px solid #b8b8b8;
 	margin: 10px auto 20px;
@@ -93,20 +91,21 @@ h1.image-title {
 
 #firstBtn,
 #prevBtn {
-	left:-30px;
+	left:-45px;
 	top:-65%;
 }
 
 #lastBtn,	
 #nextBtn{ 
     top:-95%;
+    margin-left: 7px;
 }
 
 
 #prevBtn a, #nextBtn a{  
 	display:block;
     color: transparent;
-	width:30px;
+	width:40px;
 	height:77px;
 	background:url(++resource++ptg.easyslider/arrow-left.png) no-repeat 0 0;	
 }	
