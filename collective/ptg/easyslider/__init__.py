@@ -105,8 +105,12 @@ class IEasysliderDisplaySettings(IBaseSettings):
         title=_(u"label_easyslider_numeric",
             default=u"Use numeric buttons instead of prev, next. first, last?"),
         default=False)
+    
+    easyslider_linkable = schema.Bool(
+        title=_(u"label_easyslider_linkable",
+            default=u"Should the user go to the image he/she clicks on?"),
+        default=True)
  
-
     easyslider_style = schema.Choice(
         title=_(u"label_easyslider_style",
                 default=u"What stylesheet (css file) to use"),

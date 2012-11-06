@@ -3,7 +3,7 @@
         <ul>
             <li tal:repeat="img view/adapter/cooked_images">
                 <a href="" tal:define="number repeat/img/index"
-                               tal:attributes="href img/link" >
+                               tal:attributes="href img/link" tal:omit-tag="not:view/settings/easyslider_linkable" >
                     <div class="slider-text">
                         <h1 class="image-title" tal:content="img/title">Title</h1> 
                         <p class="documentDescription" tal:content="structure img/description">Description</p> 
