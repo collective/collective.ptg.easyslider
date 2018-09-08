@@ -1,0 +1,191 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# Leonardo J. Caballero G. <leonardocaballero@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.ptg.easyslider\n"
+"POT-Creation-Date: 2018-08-18 12:19+0000\n"
+"PO-Revision-Date: 2018-08-18 07:52-0400\n"
+"Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
+"Language-Team: Spanish Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: es\n"
+"Language-Name: Español\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.ptg.easyslider\n"
+"Language: es\n"
+"X-Generator: Virtaal 0.7.1\n"
+"X-Is-Fallback-For: es-ar es-bo es-cl es-co es-cr es-do es-ec es-es es-sv es-gt es-hn es-mx es-ni es-pa es-py es-pe es-pr es-us es-uy es-ve\n"
+
+#. Default: "Name of Custom css file if you chose that above"
+#: ./__init__.py:144
+msgid "label_custom_style"
+msgstr "Nombre de Archivo css personalizado si usted elige eso arriba"
+
+#. Default: "Continuous? (You probably only want to use this when showing one slide at a time)"
+#: ./__init__.py:39
+msgid "label_easyslider_continuous"
+msgstr ""
+
+#. Default: "Fade Controls?"
+#: ./__init__.py:89
+msgid "label_easyslider_controlsFade"
+msgstr ""
+
+#. Default: "Show Controls? \n                        If this is disabled, the next 4 settings have no effect"
+#: ./__init__.py:83
+msgid "label_easyslider_controlsShow"
+msgstr ""
+
+#. Default: "Easyslider"
+#: ./__init__.py:152
+msgid "label_easyslider_display_type"
+msgstr "Easyslider"
+
+#. Default: "Show (go to) first button (rewind)?"
+#: ./__init__.py:94
+msgid "label_easyslider_firstShow"
+msgstr ""
+
+#. Default: "Height"
+#: ./__init__.py:18
+msgid "label_easyslider_imageheight"
+msgstr "Alto"
+
+#. Default: "Width"
+#: ./__init__.py:13
+msgid "label_easyslider_imagewidth"
+msgstr "Ancho"
+
+#. Default: "Show (go to) last button?"
+#: ./__init__.py:99
+msgid "label_easyslider_lastShow"
+msgstr ""
+
+#. Default: "Should the user go to the image he/she clicks on?"
+#: ./__init__.py:110
+msgid "label_easyslider_linkable"
+msgstr ""
+
+#. Default: "How many slides to show at the same time"
+#: ./__init__.py:23
+msgid "label_easyslider_lis"
+msgstr ""
+
+#. Default: "Use numeric buttons instead of prev, next. first, last?"
+#: ./__init__.py:105
+msgid "label_easyslider_numeric"
+msgstr ""
+
+#. Default: "Opacity on text overlay"
+#: ./__init__.py:44
+msgid "label_easyslider_overlay_opacity"
+msgstr ""
+
+#. Default: "0 Off"
+#: ./__init__.py:49
+msgid "label_easyslider_overlay_opacity0"
+msgstr "0 Apagado"
+
+#. Default: "0.1 Light"
+#: ./__init__.py:52
+msgid "label_easyslider_overlay_opacity1"
+msgstr ""
+
+#. Default: "1 Pitch Dark"
+#: ./__init__.py:76
+msgid "label_easyslider_overlay_opacity10"
+msgstr ""
+
+#. Default: "0.2"
+#: ./__init__.py:55
+msgid "label_easyslider_overlay_opacity2"
+msgstr "0.2"
+
+#. Default: "0.3"
+#: ./__init__.py:57
+msgid "label_easyslider_overlay_opacity3"
+msgstr "0.3"
+
+#. Default: "0.4 Medium"
+#: ./__init__.py:59
+msgid "label_easyslider_overlay_opacity4"
+msgstr ""
+
+#. Default: "0.5"
+#: ./__init__.py:62
+msgid "label_easyslider_overlay_opacity5"
+msgstr "0.5"
+
+#. Default: "0.6"
+#: ./__init__.py:64
+msgid "label_easyslider_overlay_opacity6"
+msgstr "0.6"
+
+#. Default: "0.7 Dark"
+#: ./__init__.py:67
+msgid "label_easyslider_overlay_opacity7"
+msgstr "0.7 Oscuro"
+
+#. Default: "0.8 Very Dark"
+#: ./__init__.py:70
+msgid "label_easyslider_overlay_opacity8"
+msgstr "0.8 Muy Oscuro"
+
+#. Default: "0.9 Almost Black"
+#: ./__init__.py:73
+msgid "label_easyslider_overlay_opacity9"
+msgstr "0.9 Casí Negro"
+
+#. Default: "What stylesheet (css file) to use"
+#: ./__init__.py:115
+msgid "label_easyslider_style"
+msgstr "¿Cual hoja de estilo (archivo css) para usar?"
+
+#. Default: "News Layout style"
+#: ./__init__.py:126
+#, fuzzy
+msgid "label_easyslider_styleII"
+msgstr "Estilo de nuevo diseño"
+
+#. Default: "Alternative style"
+#: ./__init__.py:123
+msgid "label_easyslider_styleIII"
+msgstr "Estilo alternativo"
+
+#. Default: "News Layout style, version 2"
+#: ./__init__.py:129
+msgid "label_easyslider_styleIV"
+msgstr ""
+
+#. Default: "News Layout style, version 3"
+#: ./__init__.py:132
+msgid "label_easyslider_styleV"
+msgstr ""
+
+#. Default: "Custom css file"
+#: ./__init__.py:138
+msgid "label_easyslider_style_custom"
+msgstr "Archivo css personalizado"
+
+#. Default: "Default"
+#: ./__init__.py:120
+msgid "label_easyslider_style_default"
+msgstr "Predeterminado"
+
+#. Default: "No style / css file"
+#: ./__init__.py:135
+msgid "label_easyslider_style_no"
+msgstr "Sin estilo / archivo css"
+
+#. Default: "Use Thumbnail size instead of Size"
+#: ./__init__.py:29
+msgid "label_easyslider_use_icons"
+msgstr "Usar Tamaño miniatura en vez de Tamaño"
+
+#. Default: "Vertical sliding?"
+#: ./__init__.py:34
+msgid "label_easyslider_vertical"
+msgstr ""
