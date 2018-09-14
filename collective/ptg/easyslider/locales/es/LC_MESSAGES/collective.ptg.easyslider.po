@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: collective.ptg.easyslider\n"
 "POT-Creation-Date: 2018-08-18 12:19+0000\n"
-"PO-Revision-Date: 2018-08-18 07:52-0400\n"
+"PO-Revision-Date: 2018-09-14 07:52-0400\n"
 "Last-Translator: Leonardo J. Caballero G. <leonardocaballero@gmail.com>\n"
 "Language-Team: Spanish Team\n"
 "MIME-Version: 1.0\n"
@@ -22,22 +22,24 @@ msgstr ""
 #. Default: "Name of Custom css file if you chose that above"
 #: ./__init__.py:144
 msgid "label_custom_style"
-msgstr "Nombre de Archivo css personalizado si usted elige eso arriba"
+msgstr "Nombre de archivo css Personalizado si usted elige eso arriba"
 
 #. Default: "Continuous? (You probably only want to use this when showing one slide at a time)"
 #: ./__init__.py:39
+#, fuzzy
 msgid "label_easyslider_continuous"
-msgstr ""
+msgstr "¿Continuo? (Usted probablemente solamente quiera usar este cuando muestre una diapositiva en un tiempo)"
 
 #. Default: "Fade Controls?"
 #: ./__init__.py:89
 msgid "label_easyslider_controlsFade"
-msgstr ""
+msgstr "¿Descolorar controles?"
 
 #. Default: "Show Controls? \n                        If this is disabled, the next 4 settings have no effect"
 #: ./__init__.py:83
+#, fuzzy
 msgid "label_easyslider_controlsShow"
-msgstr ""
+msgstr "¿Mostrar controles? \n                        Si esta deshabilitado, el próxima 4 configuraciones no tendrán efecto"
 
 #. Default: "Easyslider"
 #: ./__init__.py:152
@@ -46,8 +48,9 @@ msgstr "Easyslider"
 
 #. Default: "Show (go to) first button (rewind)?"
 #: ./__init__.py:94
+#, fuzzy
 msgid "label_easyslider_firstShow"
-msgstr ""
+msgstr "¿Mostrar (ir a) primer botón (rewind)?"
 
 #. Default: "Height"
 #: ./__init__.py:18
@@ -61,28 +64,32 @@ msgstr "Ancho"
 
 #. Default: "Show (go to) last button?"
 #: ./__init__.py:99
+#, fuzzy
 msgid "label_easyslider_lastShow"
-msgstr ""
+msgstr "¿Mostrar (ir a) último botón?"
 
 #. Default: "Should the user go to the image he/she clicks on?"
 #: ./__init__.py:110
+#, fuzzy
 msgid "label_easyslider_linkable"
-msgstr ""
+msgstr "¿Debería el usuario ir a la imagen al hacer clic en ella?"
 
 #. Default: "How many slides to show at the same time"
 #: ./__init__.py:23
+#, fuzzy
 msgid "label_easyslider_lis"
-msgstr ""
+msgstr "Cuantos efectos de diapositivas a mostrar al mismo tiempo"
 
 #. Default: "Use numeric buttons instead of prev, next. first, last?"
 #: ./__init__.py:105
+#, fuzzy
 msgid "label_easyslider_numeric"
-msgstr ""
+msgstr "¿Usar botones de número en vez de los botones previo, próximo, primero y ultimo?"
 
 #. Default: "Opacity on text overlay"
 #: ./__init__.py:44
 msgid "label_easyslider_overlay_opacity"
-msgstr ""
+msgstr "Opacidad en la superposición del texto"
 
 #. Default: "0 Off"
 #: ./__init__.py:49
@@ -92,12 +99,12 @@ msgstr "0 Apagado"
 #. Default: "0.1 Light"
 #: ./__init__.py:52
 msgid "label_easyslider_overlay_opacity1"
-msgstr ""
+msgstr "0.1 Ligero"
 
 #. Default: "1 Pitch Dark"
 #: ./__init__.py:76
 msgid "label_easyslider_overlay_opacity10"
-msgstr ""
+msgstr "1 Muy Oscuro"
 
 #. Default: "0.2"
 #: ./__init__.py:55
@@ -112,7 +119,7 @@ msgstr "0.3"
 #. Default: "0.4 Medium"
 #: ./__init__.py:59
 msgid "label_easyslider_overlay_opacity4"
-msgstr ""
+msgstr "0.4 Medio"
 
 #. Default: "0.5"
 #: ./__init__.py:62
@@ -137,7 +144,7 @@ msgstr "0.8 Muy Oscuro"
 #. Default: "0.9 Almost Black"
 #: ./__init__.py:73
 msgid "label_easyslider_overlay_opacity9"
-msgstr "0.9 Casí Negro"
+msgstr "0.9 Casi Negro"
 
 #. Default: "What stylesheet (css file) to use"
 #: ./__init__.py:115
@@ -158,12 +165,12 @@ msgstr "Estilo alternativo"
 #. Default: "News Layout style, version 2"
 #: ./__init__.py:129
 msgid "label_easyslider_styleIV"
-msgstr ""
+msgstr "Estilo de diseño de Noticias, versión 2"
 
 #. Default: "News Layout style, version 3"
 #: ./__init__.py:132
 msgid "label_easyslider_styleV"
-msgstr ""
+msgstr "Estilo de diseño de Noticias, versión 3"
 
 #. Default: "Custom css file"
 #: ./__init__.py:138
@@ -187,5 +194,6 @@ msgstr "Usar Tamaño miniatura en vez de Tamaño"
 
 #. Default: "Vertical sliding?"
 #: ./__init__.py:34
+#, fuzzy
 msgid "label_easyslider_vertical"
-msgstr ""
+msgstr "¿Diapositiva Vertical?"
